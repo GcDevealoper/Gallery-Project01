@@ -1,0 +1,291 @@
+*{
+
+	text-decoration: none;
+	margin:0px;
+	padding:0px;
+	font-family: sans-serif;
+}
+
+body{
+
+	background: #444;
+}
+/*Animaciones*/
+
+@keyframes show-Startleft{
+
+	0%{
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+
+	50%{
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+
+	100%{
+		opacity: .5;
+		transform: translateX(0px);
+	}
+}
+
+/*Animaciones*/
+#container{
+	width: 90%;
+	height: auto;
+	margin:0px auto;
+	background:#343434;
+	border:1px solid #555;
+	box-shadow: 0px 0px 10px #ccc;
+	margin-top: 40px;
+	margin-bottom: 40px;
+
+	min-height: 600px;
+}
+
+#header{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	height: 120px;
+	border-bottom: 1px solid #555;
+}
+
+
+.logo{
+
+	flex-grow: 1;
+	flex-basis: 60%;
+	padding: 10px;
+	margin-left: 20px;
+	margin-bottom:10px;
+	color: #fff;
+	text-shadow: 1px 1px 0px #eee;
+	text-transform: uppercase;
+	animation-name: show-Startleft;
+	animation-duration: .8s;
+	animation-iteration-count: initial;
+}
+
+.logo h1{
+
+	font-family: Helvetica;
+	font-style: italic;
+	font-weight: 900;
+	font-size: 35px;
+
+}
+
+/*
+#menu{
+	flex-grow:1;
+	flex-basis: 30%;
+	height: 100%;
+	padding-right: 20px;
+}
+
+#menu > ul{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	list-style: none;
+}
+
+#menu a{
+
+	text-transform: uppercase;
+	color: #444;
+	padding:15px;
+	transition: all 300ms;
+
+}
+
+
+#menu a:hover{
+
+	background: #ccc;
+	color: #fff;
+
+}
+*/
+
+#content{
+
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+#projects{
+
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	align-content: flex-start;
+	flex-basis: 80%;
+
+}
+
+
+.project{
+	flex-grow: 1;
+	flex-basis: 250px;
+	margin-bottom: 25px;
+	min-height: 100px;
+	/*max-height: 500px;*/
+	margin-right: 20px;
+	border:1px solid #555;
+	animation-name: show-Startleft;
+	animation-duration: 1.8s;
+	animation-iteration-count: initial;
+
+}
+
+.project img{
+
+	width: 100%;
+	object-fit: cover;
+}
+
+.project-info{
+
+	padding: 10px;
+}
+
+.project-info a{
+
+	font-size: 16px;
+	color: #fff;
+	transition: all 300ms;
+}
+
+.project-info a:hover{
+
+	color: #ccc;
+}
+
+.project-info p{
+
+	font-size: 16px;
+	color: #c3bfbf;
+	transition: all 300ms;
+}
+
+
+
+
+#aside{
+
+
+	flex-basis: 15%;
+	margin-right: 30px;
+	padding: 15px;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+#aside img{
+
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin: 20px auto;
+  margin-top:-10px;
+  border-radius: 96px;
+  border:4px solid #fff;
+  object-fit: cover;
+  background: #eee;
+  animation-name: show-Startleft;
+  animation-duration: 1.2s;
+  animation-iteration-count: initial;
+  transition: all 1s;
+
+}
+
+#aside h3{
+
+	text-align: center;
+	margin-bottom: 15px;
+	color: #fff;
+	animation-name: show-Startleft;
+	animation-duration: 1.5s;
+	animation-iteration-count: initial;
+}
+
+#aside ul{
+
+	list-style: none;
+
+}
+
+#aside ul li{
+
+	padding-bottom: 20px;
+
+}
+
+#aside a{
+
+	display: block;
+	position: relative;
+	text-align: center;
+	padding:20px;
+	background: #444;
+	color: #fff;
+	overflow: hidden;
+	border-radius: 5px;
+	text-transform: uppercase;
+	animation-name: show-Startleft;
+	animation-duration: 1.6s;
+	animation-iteration-count: initial;
+	transition: all 300ms;
+
+}
+
+#aside a:hover{
+
+	background: #222;
+	color: #eee;
+}
+
+#footer{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+
+	height: 120px;
+	align-items: center;
+	border-top: 1px solid #555;
+}
+
+#footer .logo{
+
+	opacity: .5;
+	flex-basis: auto;
+	flex-grow: 1;
+}
+
+#footer .info{
+
+	flex-grow: 1;
+	text-align: right;
+	margin-right: 15px;
+	color: #b5b2b2;
+	opacity: .8;
+	animation-name: show-Startleft;
+	animation-duration: 1.7s;
+	animation-iteration-count: initial;
+}
+
+
